@@ -25,7 +25,7 @@
         </v-card-actions>
       </v-card>
     </v-flex>
-    
+
   </v-flex>
 </template>
 <script>
@@ -38,4 +38,5 @@
       return{articles};
     }
   }
+  
 </script>

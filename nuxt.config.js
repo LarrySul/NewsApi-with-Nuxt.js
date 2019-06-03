@@ -1,5 +1,6 @@
 import VuetifyLoaderPlugin from 'vuetify-loader/lib/plugin'
 import pkg from './package'
+import {Workbox} from 'workbox-window'
 
 export default {
   mode: 'universal',
@@ -41,7 +42,7 @@ export default {
   */
   plugins: [
     '@/plugins/vuetify',
-    // '~/plugins/sw.js',
+    '~/plugins/sw.js',
   ],
 
   /*
@@ -73,9 +74,30 @@ export default {
     // proxyHeaders: false
   },
 
-
+  manifest: {
+    name: 'My Awesome NewsApp',
+    crossorigin: 'use-credentials',
+    // icons: ['love.png']
+  },
+  //icon source
+  icon: {
+    Default: './love.png',
+  },
   // workbox to enable service worker
-  
+  workbox: {
+    runtimeCaching: [
+      {
+        urlPattern: 'https://newsapi.org/v2/top-headlines?country=ng&apiKey=af4129710bf14609b57b33cc43239681',
+        strategyOptions: {
+          cacheName: 'NewsApp',
+          cacheExpiration: {
+            maxEntries: 10,
+            maxAgeSeconds: 300
+          }
+        }
+      }
+    ]
+ },
   /*
   ** Build configuration
   */

@@ -62,13 +62,9 @@
 
     >
       <v-card-title>
-        <!-- <strong class="subheading">Get connected with us on social networks!</strong> -->
-
-        <v-spacer></v-spacer>
-
         <v-layout row wrap>
           <v-flex xs4>
-            <strong class="subheading">Get connected with us on social networks!</strong> 
+            <strong class="subheading">Get connected !</strong> 
           </v-flex>
           <v-flex xs2>
               <a href="https://www.linkedin.com/in/suleolanrewaju/"><fa :icon="fab.faLinkedin"  class="mx-4 fa-2x"/></a> 
@@ -80,15 +76,10 @@
             <a href="https://twitter.com/lanromanero"><fa :icon="fab.faTwitter"  class="mx-4 fa-2x"/></a>
           </v-flex>
           <v-flex xs2>
-            <a href="https://twitter.com/larrysul"><fa :icon="fab.faGithub"  class="mx-4 fa-2x"/></a>
+            <a href="https://github.com/larrysul"><fa :icon="fab.faGithub"  class="mx-4 fa-2x"/></a>
           </v-flex>
         </v-layout>  
 
-      </v-card-title>
-
-      <v-divider></v-divider>
-      <v-card-title class="justify-center">
-        &copy;{{ new Date().getFullYear() }} — <strong>Sule Olanrewaju</strong>
       </v-card-title>
     </v-card>
   </v-footer>
@@ -104,6 +95,8 @@
 
 <script>
 import { fab } from '@fortawesome/free-brands-svg-icons'
+import {Workbox} from 'workbox-window'
+
 
 export default {
   data() {
