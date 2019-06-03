@@ -95,7 +95,6 @@
 
 <script>
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import {Workbox} from 'workbox-window'
 
 
 export default {

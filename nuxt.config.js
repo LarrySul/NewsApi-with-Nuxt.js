@@ -79,10 +79,7 @@ export default {
     crossorigin: 'use-credentials',
     // icons: ['love.png']
   },
-  //icon source
-  icon: {
-    Default: './love.png',
-  },
+  
   // workbox to enable service worker
   workbox: {
     runtimeCaching: [
