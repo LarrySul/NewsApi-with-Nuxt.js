@@ -1,6 +1,7 @@
 import VuetifyLoaderPlugin from 'vuetify-loader/lib/plugin'
 import pkg from './package'
 
+
 export default {
   mode: 'universal',
 
@@ -48,7 +49,6 @@ export default {
   */
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/pwa',
     'nuxt-fontawesome',
 
     ['nuxt-fontawesome', {
@@ -72,12 +72,7 @@ export default {
     // proxyHeaders: false
   },
 
-  manifest: {
-    name: 'My Awesome NewsApp',
-    crossorigin: 'use-credentials',
-    // icons: ['love.png']
-  },
-  
+
   /*
   ** Build configuration
   */

@@ -39,23 +39,3 @@
     }
   }
 </script>
-<style scoped>
-.title{
-  bottom: 50px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  font-size:2em;
-  padding:30px;
-  position: absolute;
-  margin-left: inline-flex;
-  justify-content: center;
-  align-items: center;
-  vertical-align: text-bottom;
-}
-/* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px) {
-  .title{
-    margin: 0 30px 0 60px; 
-  }
-}
-</style>

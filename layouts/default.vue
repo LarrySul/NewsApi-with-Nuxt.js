@@ -64,7 +64,7 @@
       <v-card-title>
         <v-layout row wrap>
           <v-flex xs4>
-            <strong class="subheading">Get connected !</strong> 
+            <strong class="subheading">Get connected</strong> 
           </v-flex>
           <v-flex xs2>
               <a href="https://www.linkedin.com/in/suleolanrewaju/"><fa :icon="fab.faLinkedin"  class="mx-4 fa-2x"/></a> 
@@ -94,7 +94,7 @@
 </style>
 
 <script>
-import { fab } from '@fortawesome/free-brands-svg-icons'
+import {fab} from '@fortawesome/free-brands-svg-icons'
 
 
 export default {
@@ -110,12 +110,12 @@ export default {
           to: '/'
         },
         {
-          icon: 'bubble_chart',
+          icon: 'arrow_forward_io',
           title: 'Latest News',
           to: '/news'
         },
         {
-          icon: 'group_work',
+          icon: 'arrow_forward_io',
           title: 'About App',
           to: '/about'
         }
@@ -123,7 +123,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Iroyin Ninu Nigeria'
+      title: 'Top Headlines'
     }
 
   },
